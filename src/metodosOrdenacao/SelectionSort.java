@@ -11,7 +11,11 @@ public class SelectionSort {
         for (int i = 0; i < array.length - 1; i++) {
             min = i;
             for (int j = i + 1; j < array.length; j++) {
+<<<<<<< HEAD
                 comp++;
+=======
+                comp++; // Comparações Realizadas
+>>>>>>> origin/main
                 if (array[j] < array[min]) {
                     min = j;
                 }
@@ -19,7 +23,11 @@ public class SelectionSort {
             aux = array[i];
             array[i] = array[min];
             array[min] = aux;
+<<<<<<< HEAD
             trocas++;
+=======
+            trocas++; // Trocas Realizadas
+>>>>>>> origin/main
         }
         
         long tempoFinal = System.nanoTime();

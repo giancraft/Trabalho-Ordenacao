@@ -12,10 +12,17 @@ public class InsertionSort {
             pivo = array[i];
             j = i - 1;
             while (j >= 0 && array[j] > pivo) {
+<<<<<<< HEAD
                 comp++;
                 array[j + 1] = array[j];
                 j = j - 1;
                 trocas++;
+=======
+                comp++; // Comparações Realizadas
+                array[j + 1] = array[j];
+                j = j - 1;
+                trocas++; // Trocas Realizadas
+>>>>>>> origin/main
             }
             array[j + 1] = pivo;
         }

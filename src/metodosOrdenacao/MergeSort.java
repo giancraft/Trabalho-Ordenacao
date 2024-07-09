@@ -37,14 +37,22 @@ public class MergeSort {
 
         int i = 0, j = 0, k = left;
         while (i < n1 && j < n2) {
+<<<<<<< HEAD
             comp++;
+=======
+            comp++; // Comparações Realizadas
+>>>>>>> origin/main
             if (L[i] <= R[j]) {
                 array[k] = L[i];
                 i++;
             } else {
                 array[k] = R[j];
                 j++;
+<<<<<<< HEAD
                 trocas++;
+=======
+                trocas++; // Trocas Realizadas
+>>>>>>> origin/main
             }
             k++;
         }
@@ -53,14 +61,22 @@ public class MergeSort {
             array[k] = L[i];
             i++;
             k++;
+<<<<<<< HEAD
             trocas++;
+=======
+            trocas++; // Aqui são Realizadas Trocas Também
+>>>>>>> origin/main
         }
 
         while (j < n2) {
             array[k] = R[j];
             j++;
             k++;
+<<<<<<< HEAD
             trocas++;
+=======
+            trocas++; // Aqui Também
+>>>>>>> origin/main
         }
 
         return new long[]{comp, trocas};

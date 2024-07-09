@@ -9,12 +9,20 @@ public class BubbleSort {
 		long temp;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
+<<<<<<< HEAD
                 comp++;
+=======
+                comp++; // Comparações Realizadas
+>>>>>>> origin/main
                 if (array[j] > array[j + 1]) {
                     temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
+<<<<<<< HEAD
                     trocas++;
+=======
+                    trocas++; // Trocas Realizadas
+>>>>>>> origin/main
                 }
             }
         }

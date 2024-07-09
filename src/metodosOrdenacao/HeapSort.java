@@ -18,7 +18,11 @@ public class HeapSort {
             long temp = array[0];
             array[0] = array[i];
             array[i] = temp;
+<<<<<<< HEAD
             trocas++;
+=======
+            trocas++; // Aqui Também são Realizadas Trocas 
+>>>>>>> origin/main
             long[] heapifyResult = heapify(array, i, 0, comp, trocas);
             comp = heapifyResult[0];
             trocas = heapifyResult[1];
@@ -34,12 +38,22 @@ public class HeapSort {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
 
+<<<<<<< HEAD
         comp++;
+=======
+        comp++; // Comparações Realizadas
+        
+>>>>>>> origin/main
         if (left < n && array[left] > array[largest]) {
             largest = left;
         }
 
+<<<<<<< HEAD
         comp++;
+=======
+        comp++; // Aqui Também são Realizadas Comparações
+        
+>>>>>>> origin/main
         if (right < n && array[right] > array[largest]) {
             largest = right;
         }
@@ -48,7 +62,11 @@ public class HeapSort {
             long swap = array[i];
             array[i] = array[largest];
             array[largest] = swap;
+<<<<<<< HEAD
             trocas++;
+=======
+            trocas++; // Trocas Realizadas
+>>>>>>> origin/main
             long[] heapifyResult = heapify(array, n, largest, comp, trocas);
             comp = heapifyResult[0];
             trocas = heapifyResult[1];
